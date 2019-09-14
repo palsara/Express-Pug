@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  .row
+    .col
+      table.table.table-dark
+        thead
+          tr
+            th(scope='col') #
+            th(scope='col') name
+            th(scope='col') department
+            th(scope='col') email
+        tbody
+          each employee in users
+            tr
+              th(scope='row') #{employee.id}
+              td #{employee.name}
+              td #{employee.department}
+              td #{employee.email}

@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  -let url='http://atv.hu'
+  -let classes=['class-1','class-2','class-3']
+  h1= title
+  p(class=classes) Welcome to #{title}
+  p=message
+  a(href=url) atv
+  br
+  br
+  if description
+    div=description
+  else
+    div no description
+

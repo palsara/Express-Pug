@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  h1= title
+  .container
+    .row
+      .col-10
+				table.table.table-striped
+					thead
+						tr
+							th #
+							th insdate
+							th category
+							th username
+							th useremail
+              th address
+              th quantity
+					tbody
+						each employee in users
+							tr
+								td #{order.id}
+								td #{order.insdate}
+								td #{order.category}
+								td #{order.username}
+								td #{order.useremail}
+								td #{order.address}
+								td #{order.quantity}

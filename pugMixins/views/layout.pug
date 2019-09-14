@@ -1,0 +1,19 @@
+
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    mixin list
+      ul
+        li first
+        li second
+        li third
+
+    mixin user(name)
+      .user
+        span= name
+        if block
+          block
+    block content
